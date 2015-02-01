@@ -11,3 +11,21 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+
+# Prevents Ruby from using OpenSSL so that Postage doesn't freak out
+# export RUBYOPT="-r openssl"
+
+alias ll='ls -alh -G'
+alias code='cd /Users/dessy/code'
+alias gg='cd /Users/dessy/code/rails/green_gauge_rails'
+alias ggi='cd /Users/dessy/code/ios/greengage-ios'
+alias gga='cd /Users/dessy/code/android/greengage-mobile-android'
+alias ggb='cd /Users/dessy/code/blackberry/green_gauge_bb'
+alias bb10='cd /Users/dessy/code/bb/bb-10'
+alias nudge='cd /Users/dessy/code/rails/nudge'
+alias ped='cd /Users/dessy/code/500lines/pedometer'
+alias panped='pandoc chapter.md -o chapter.pdf --template=default'
+alias be='bundle exec'
+
+# For rbenv
+eval "$(rbenv init -)"
