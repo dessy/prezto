@@ -27,5 +27,6 @@ alias ped='cd /Users/dessy/code/500lines/pedometer'
 alias panped='pandoc chapter.md -o chapter.pdf --template=default'
 alias be='bundle exec'
 
-# For rbenv
+# For rbenv, pushes shims onto the PATH
+export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
